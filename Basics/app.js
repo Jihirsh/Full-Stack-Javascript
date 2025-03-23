@@ -75,3 +75,22 @@ greetings("Alice", sayGoodbye);
 
 const currentDate = new Date();
 console.log(currentDate);
+const month = currentDate.getMonth();
+console.log(`Month: ${month}`);
+
+// setInterval will run our code again and again after a certain interval of time
+// setTimeOut will run our code only once after a certain interval of time
+
+// setTimeout (function() {
+//     console.log(`This function will be executed after 3 seconds`);
+// } , 3000);
+
+//Stop the interval after 10 seconds 
+const intervalId = setInterval(function () {
+    console.log(`This function is being executed at an interval`);
+}, 1000);
+
+setTimeout(function () {
+    clearInterval(intervalId);
+    console.log(`Interval has been stopped`);
+}, 10000);

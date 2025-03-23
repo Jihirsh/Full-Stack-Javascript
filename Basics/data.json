@@ -1,0 +1,14 @@
+{
+    "name": "John Doe",
+    "age": 30,
+    "city": "New York",
+    "email": "jd@gmail.com",
+    "isSubscribed": true,
+    "hobbies": ["reading", "music", "movies"],
+    "address": {
+        "street": "123 Main St",
+        "city": "New York",
+        "state": "NY",
+        "idk": true
+    }
+}

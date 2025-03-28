@@ -15,5 +15,31 @@ const lastName = "Singh";
 function info() {
     return "I am a software developer";
 }
-
 console.log(`${info()}`);
+
+//Arrow Functions, also known as fat arrow functions, are a more concise way to write functions in JavaScript.
+//They were introduced in ECMA Script 6 (ES6) and provide a more concise syntax for writing function expressions.
+
+//function greet() {
+//  return `Hello, ${username}`};
+//};
+greet = (username) => {
+    return `Hello, ${username}`;
+};
+console.log(greet("Jihirsh"));
+
+setTimeout(() => {
+    console.log("Hello");
+    setTimeout(() => {
+        console.log("Hey");
+        setTimeout(() => {
+            console.log("Namaste");
+            setTimeout(() => {
+                console.log("Hola");
+                setTimeout(() => {
+                    console.log("Bonjour");
+                }, 2000);
+            }, 2000);
+        }, 2000);
+    }, 2000);
+}, 2000); 
